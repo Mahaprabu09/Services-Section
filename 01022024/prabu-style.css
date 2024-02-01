@@ -1,0 +1,303 @@
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(calc(300px * -13));
+    transform: translateX(calc(300px *  -13));
+
+  }
+  100% {
+       -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(calc(300px * -13));
+    transform: translateX(calc(300px * -13));
+  
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.partner-logo-slide-title{
+  padding-top: 30px;
+  text-align: center;
+  font-family:"GT Walsheim Pro";
+}
+
+.partner-logo-slide-section {
+  position: relative;
+  z-index: 2; /* Adjust the value based on your layout */
+
+  
+}
+
+.partner-logo-slide-track{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.partner-logo-slider {
+  background: pr;
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.partner-logo-slider::before,
+.partner-logo-slider::after {
+  /* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
+  content: "";
+  height: 100px;
+  position: absolute;
+  z-index: 2;
+}
+.partner-logo-slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.partner-logo-slider::before {
+  left: 0;
+  top: 0;
+}
+.partner-logo-slider .partner-logo-slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(300px * 26);
+}
+.partner-logo-slider:hover .partner-logo-slide-track {
+  animation-play-state: paused;
+}
+
+.partner-logo-slider .partner-logo-slider-animate {
+  height: 100px;
+  width: 300px;
+  padding:30px; 
+  border-radius: 2%;
+  border-width: 2px;
+}
+
+
+.partner-logo-slider-animate img {
+    width: 100%; /* Set the width to 100% to ensure all images have the same width */
+    padding: 15px;
+    border-radius: 2%;
+    border-width: 2px;
+    border-radius: 15px;
+    height:200%;
+  }
+
+
+.partner-logo-slider-animate img:hover{
+  transform: translateZ(15px);
+  transition: 1s;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+
+}
+
+
+.partner-logo-slider-animate{
+  height:100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  perspective: 100px;
+  
+}
+
+
+  
+
+  /* MESSAGE FROM OUR LEADERS*/
+
+  .xis-sass-testimonial-inner-item .xis-sass-author-img .carousel-inner-testimonial-logo{
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+
+.xis-sass-btn-span{
+  font-size: 15px;
+  padding: 20px 10px 20px;
+  border-radius: 15px;
+  justify-content: center;
+
+}
+
+.xis-sass-btn-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+  border-radius: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: white;
+  color: #0772ff;
+}
+
+.xis-sass-btn-name:hover{
+  background-color: #0084ff;
+  color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.5s;
+}
+.xis-sass-btn{
+  padding-left: 180px;
+}
+
+.xis-sass-btn-icon{
+  padding-left: 5px;
+  align-items: center;
+  font-size: 1.5em;
+  transition: all 0.5s linear;
+}
+
+.xis-sass-btn:hover ion-icon {
+  transform: rotate(-90deg);
+}
+
+.blue {
+  padding: 5px;
+  border: 2px solid #0772ff;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+}
+
+.blue:hover ion-icon {
+  transform: translateX(5px);
+}
+
+
+/* Works about */
+
+.xis-saas-feature-text-wrapper .xis-saas-section-title .xis-saas-section-subtitle{
+  max-width: 600px;
+}
+
+.xis-saas-feature-text-wrapper .xis-saas-feature-text .xis-saas-feature-paragraph-text{
+ width: 550px;
+ font-family:"GT Walsheim Regular";
+ font-size: 18px;
+ line-height: 1.5;
+ color:#526a8b ;
+}
+
+.xis-saas-feature-text-wrapper .xis-saas-feature-list .xis-saas-feature-list-style h5{
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.xis-saas-feature-img-wrapper .xis-saas-feature-img2 .xis-saas-feature-img2-wai2{
+  border-radius: 25px;
+}
+.xis-saas-feature-img-wrapper .xis-saas-feature-img3 .xis-saas-feature-img3-wai3{
+  border-radius: 10px;
+  box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+  height: 90px;
+}
+
+.xis-saas-feature-img-wrapper .xis-saas-feature-img7 .xis-saas-feature-img7-wai9{
+  width: auto;
+  height: auto;
+  padding-bottom: 100px;
+}
+
+  /* Slideshow container */
+  .xis-saas-feature-text-wrapper {
+    position: relative;
+  }
+
+  /* Caption text */
+  .xis-saas-feature-slidetext{
+    color: #000000;
+    font-size: 18px;
+    font-family: "GT Walsheim Pro";
+    border-end-end-radius: 15px;
+    padding: 25px 12px;
+    position: absolute;
+    bottom: 0; /* Updated to bottom of the image */
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.774); /* Updated background color */
+  }
+
+  /* Fading animation */
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .xis-saas-feature-slidetext {font-size: 11px}
+  }
+
+
+  /* Our vision */
+  .pr20-business-column .pr20-business-item .pr20-pera-txt{
+    font-family: "GT Walsheim Regular";
+    color: #526a8b;
+  }
+
+  .pr20-business-item .pr20-icon-wrapper .pr20-icon-wrapper-flaticon{
+    height:60px;
+    width: 120px;
+    
+  }
+
+  .pr20-business-column .pr20-business-item{
+    margin-top:30px;
+  }
+
+  .pr20-icon-wrapper .pr20-icon-wrapper-flaticon-vi2{
+    /* height:60px;
+    width: 180px; */
+  }
+
+  .pr20-business-middle .pr20-business-middle-image{
+    border-radius: 10px;
+    width: 600px; 
+    height: 250px; 
+    object-fit: cover; 
+  }
+  .pr20-business-item {padding: 14px !important;}
+
+/* Our services */
+  .it-up-featured-content .col-lg-4:nth-child(8) .it-up-featured-innerbox {
+    transform: translateY(-40px);
+}
+
+.it-up-featured-innerbox .it-up-featured-icon i{
+  font-size:34px;
+}
+
+.it-up-featured-content .col-lg-4:nth-child(7) .it-up-featured-innerbox .it-up-featured-text .it-up-ft-more {
+  color: #00b3b3;
+}
+
+.it-up-featured-content .col-lg-4:nth-child(8) .it-up-featured-innerbox .it-up-featured-text .it-up-ft-more {
+  color: #be60fd;
+}
+
+/* Font colors to icons */
+
+.it-up-featured-content .col-lg-4:nth-child(1) .it-up-featured-innerbox .it-up-featured-text .it-up-ft-more {
+  color: #0066cc!important;
+}
+.it-up-featured-innerbox .it-up-featured-icon .fa-code{
+   color: #0066cc;
+}
